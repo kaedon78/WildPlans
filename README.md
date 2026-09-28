@@ -9,7 +9,7 @@ Blueprints for **RuneScape: Dragonwilds**.
 Save a building you have made, then place it again somewhere else as the
 game's own ghost pieces, and build it up piece by piece or all at once.
 
-- **Capture** any building of yours into a blueprint, with a name.
+- **Capture** any player-built building into a blueprint, with a name.
 - **Place** a blueprint as a single ghost that you can turn, raise and move
   before you set it down.
 - **Rebuild in place** exactly where the blueprint was captured, as a backup
@@ -52,7 +52,7 @@ it.
 
 | Button | Does |
 |---|---|
-| **CAPTURE** | Enters capture mode: the structure nearest you (within 100 m) is highlighted. **N** captures it and asks for a name; **Z** or **Esc** cancels. |
+| **CAPTURE** | Enters capture mode: the structure nearest you (within 100 m) is highlighted. **N** captures it and asks for a name; **Esc** cancels. |
 | **REPLAY** | **IN PLACE** lays ghosts exactly where the blueprint was captured. **PLACE** enters placement mode (below). |
 | **RENAME** | Renames the blueprint (**Enter** confirms). Its placements keep up with the new name. |
 | **PLACEMENTS** | Lists everywhere this blueprint stands in the current world, with **REMOVE** (shows what will go and asks you to **CONFIRM**), **WAYPOINT** (marks it on your compass) and **FORGET** for each. |
@@ -70,7 +70,7 @@ game's **Settings > Controls**, below its own key bindings.
 | `U` | snap to nearby structure on / off |
 | `N` | place it as **ghosts**, free, for you to build from the build menu |
 | `O` | place it as **real** pieces: **Creative worlds only** |
-| `Z` / `Esc` | cancel |
+| `Esc` | cancel |
 
 Ghosts cost nothing and cannot half-finish, so it is safe to try a spot, walk
 round it, and remove it (**PLACEMENTS** > **REMOVE**) if you don't like it.
@@ -93,26 +93,21 @@ anyone who prefers them:
 
 | Key | Does |
 |---|---|
-| `Ctrl+F3` | capture the structure nearest you, with a timestamped name |
-| `Ctrl+F4` / `Ctrl+Shift+F4` | place the pinned blueprint as ghosts at you / in place |
-| `Ctrl+F5` | dry run: report the plan and place nothing |
-| `Ctrl+F8` | place for real: **pays materials** |
-| `Ctrl+F12`, then `Ctrl+Shift+F12` twice | undo the last placement (plan, arm, confirm) |
-| `Ctrl+PageUp` / `Ctrl+PageDown` | raise / lower the next placement by 50 cm |
-| `Ctrl+Shift+End` | force-close any WildPlans window |
+| `Ctrl+F3` | capture mode (the panel's **CAPTURE**) |
+| `Ctrl+F4` | placement mode for the pinned blueprint (**REPLAY** > **PLACE**) |
 
 With the UE4SS GUI console enabled (`GuiConsoleEnabled = 1` in
 `UE4SS-settings.ini`; `Ctrl+O` opens it), type `wp` for the list of commands:
-`wp.panel`, `wp.capture [radius_m] [name]`, `wp.replay`, `wp.inplace`,
-`wp.placemode`, `wp.capturemode`, `wp.undo`, `wp.rename`, and so on.
+`wp.panel`, `wp.list`, `wp.rename`, `wp.capturemode`, `wp.placemode`,
+`wp.inplace`, `wp.undo` (removes the last placement, asking first) and
+`wp.close`. Each does what its panel button does.
 
 ## Limits
 
-- **Only your own building pieces** are captured. The game's world props and
+- **Only player building pieces** are captured. The game's world props and
   terrain are not.
-- **Real placement:** `O` works in Creative worlds only. `Ctrl+F8` builds
-  for real and pays the materials. Otherwise, place ghosts and build them
-  normally.
+- **Real placement:** `O` works in Creative worlds only. Elsewhere, place
+  ghosts and build them from the build menu as normal.
 - **Game updates** can change piece data. If the panel or placement stops
   working after a patch, check for a new WildPlans release.
 - **Servers:** the mod runs on your client only; nothing is installed on the
