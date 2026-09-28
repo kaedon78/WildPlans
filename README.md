@@ -24,6 +24,10 @@ icons and dialogs, so there are no files to edit.
 > server. Not yet tested with several players on one server, or in co-op hosted
 > by a player.
 
+*Created using intellectual property belonging to Jagex Limited under the terms
+of Jagex's [Fan Content Policy](https://legal.jagex.com/docs/policies/fan-content-policy).
+This content is not endorsed by or affiliated with Jagex.*
+
 ## Install
 
 1. Install **UE4SS v3.0.1** for Dragonwilds
