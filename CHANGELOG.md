@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.1.2 (2026-09-28)
+
+Nothing changes in play.
+
+- Smaller: the development tools are no longer shipped. The mod's scripts are
+  about a quarter shorter, and nothing that loads is there for testing only.
+- The README carries Jagex's fan content disclaimer.
+- A `wp` command given an option it does not have says how to use it.
+
 ## v0.1.1 (2026-09-28)
 
 Changed
