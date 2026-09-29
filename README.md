@@ -62,7 +62,8 @@ it.
 | **PLACEMENTS** | Lists everywhere this blueprint stands in the current world, with **REMOVE** (shows what will go and asks you to **CONFIRM**), **WAYPOINT** (marks it on your compass) and **FORGET** for each. |
 
 **Esc** or **N** closes the panel. The mod's keys are also listed in the
-game's **Settings > Controls**, below its own key bindings.
+game's **Settings > Controls**, below its own key bindings, and that is where
+you change them (see [Changing the keys](#changing-the-keys)).
 
 **Placement mode** shows the pinned blueprint as one ghost in front of you:
 
@@ -87,8 +88,26 @@ round it, and remove it (**PLACEMENTS** > **REMOVE**) if you don't like it.
   copying the file.
 - `blueprints\placements.txt`: where each blueprint has been placed, used by
   PLACEMENTS.
+- `keys.txt`: your keys, if you changed any.
 - `logs\`: what the mod did. Attach these (and `ue4ss\UE4SS.log`) to a bug
   report.
+
+### Changing the keys
+
+If a key clashes with another mod, change it in the game's **Settings >
+Controls**: scroll to **WILDPLANS (MOD)**, click a bright row (**Open /
+Close**, real pieces, snap, or the two shortcuts), and press the new key in
+the game's "Press any key" box. It works at once; no restart.
+
+- Any letter, **0-9** and **F1-F12** work, alone or with **Ctrl**, **Alt**
+  or **Shift**. If the game already uses the key, the box names its action
+  and asks you to press the key again to use it anyway (both then respond). A
+  key another WildPlans action or another mod already uses is refused.
+- **Esc** cancels. The panel key (**Open / Close**) also captures and places
+  in the modes, so those rows show it too.
+- Your choice is saved in `keys.txt` (above), which you can also edit by
+  hand; delete it to go back to the defaults. Esc and the mouse-wheel keys are
+  fixed.
 
 ### Keys and console commands (optional)
 
@@ -99,6 +118,8 @@ anyone who prefers them:
 |---|---|
 | `Ctrl+F3` | capture mode (the panel's **CAPTURE**) |
 | `Ctrl+F4` | placement mode for the pinned blueprint (**REPLAY** > **PLACE**) |
+
+These are the defaults; see [Changing the keys](#changing-the-keys).
 
 With the UE4SS GUI console enabled (`GuiConsoleEnabled = 1` in
 `UE4SS-settings.ini`; `Ctrl+O` opens it), type `wp` for the list of commands:

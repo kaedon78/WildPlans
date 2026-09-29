@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.1.3 (2026-09-29)
+
+- **The keys can be changed**, on the game's Settings > Controls page: click a
+  WILDPLANS row and press the new key in the game's own "Press any key" box.
+  It applies at once and is saved in `keys.txt`. A key the game already uses
+  asks first; one another mod or WildPlans action uses is refused.
+- Ctrl+F3 and Ctrl+F4 no longer start a mode under the pause menu.
+- The blueprint list, its tooltips, the capture and placement boxes and the
+  dialogs follow the game's Settings > Accessibility > Font Size; at Large
+  nothing is cut off any more.
+- The blueprint panel's buttons sit midway between the list and the frame.
+
 ## v0.1.2 (2026-09-28)
 
 Nothing changes in play.
