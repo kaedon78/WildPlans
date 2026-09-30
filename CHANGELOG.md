@@ -1,5 +1,42 @@
 # Changelog
 
+## v0.1.4 (2026-09-30)
+
+New
+
+- **DETAILS**, a new button in the blueprint panel: the selected blueprint's
+  pieces by kind, and everything it takes to build, material by material,
+  with the game's own icons. The REPLAY dialog names the three largest
+  amounts.
+- **Shift + mouse wheel turns a blueprint 1 degree** in placement mode. The
+  wheel alone still turns it 15 degrees, the game's own step.
+- **A placement that takes more than a few seconds shows its progress**
+  ("Placing - 540 / 1152") on the right of the screen until it is done.
+- PLACEMENTS shows the blueprint's name under the title, so a long name no
+  longer runs past the frame.
+
+Other building mods
+
+- **Blueprints keep working with mods that add building pieces**, such as
+  Custom Builder. Such a mod changes how the game numbers its own pieces, so
+  a blueprint could come out as the wrong pieces. Now a blueprint made
+  without the mod places correctly with it, and one of the game's own pieces
+  made with the mod places correctly after the mod is removed.
+- **A blueprint with pieces the game does not have is refused** instead of
+  placed -- pieces from a mod that is not installed, or from a newer version
+  of the game. Placing one crashed the game. The same goes for a piece whose
+  data the game cannot load.
+- In placement mode, another mod's pieces show as boxes of their size, and
+  the box says they are not checked against the ground rather than calling
+  the spot good.
+
+Fixed
+
+- Placing some pieces could crash the game: the Agility, Deluxe Edition and
+  Umbral Sands pieces, three small walls and a thin beam.
+- Placement mode no longer warns that a prop will float when its legs or base
+  reach the ground; it judged by the middle of the prop.
+
 ## v0.1.3 (2026-09-29)
 
 - **The keys can be changed**, on the game's Settings > Controls page: click a

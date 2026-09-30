@@ -60,6 +60,7 @@ it.
 | **REPLAY** | **IN PLACE** lays ghosts exactly where the blueprint was captured. **PLACE** enters placement mode (below). |
 | **RENAME** | Renames the blueprint (**Enter** confirms). Its placements keep up with the new name. |
 | **PLACEMENTS** | Lists everywhere this blueprint stands in the current world, with **REMOVE** (shows what will go and asks you to **CONFIRM**), **WAYPOINT** (marks it on your compass) and **FORGET** for each. |
+| **DETAILS** | The blueprint's pieces by kind and everything it takes to build, material by material. |
 
 **Esc** or **N** closes the panel. The mod's keys are also listed in the
 game's **Settings > Controls**, below its own key bindings, and that is where
@@ -70,6 +71,7 @@ you change them (see [Changing the keys](#changing-the-keys)).
 | Key | Does |
 |---|---|
 | mouse wheel | rotate 15° (90° with snap on) |
+| `Shift` + wheel | rotate 1° |
 | `Ctrl` + wheel | up / down 15 cm |
 | `Alt` + wheel | forward / back 150 cm |
 | `U` | snap to nearby structure on / off |
